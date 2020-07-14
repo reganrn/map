@@ -239,6 +239,10 @@ for(i = 0; i < regions.length; i++) {
 
 
 
+
+
+
+
 // $(function() {
 
 //     for(i = 0; i < regions.length; i++) {
