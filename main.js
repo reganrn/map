@@ -217,6 +217,7 @@ var regions=[
     }
 ];
 
+// Click
 const currentMap = document.querySelectorAll('.map path')
 for (const currentClick of currentMap) {
     currentClick.addEventListener('click', function(event) {
@@ -226,52 +227,30 @@ for (const currentClick of currentMap) {
   })
 }
 
+
+for (const currentClick of currentMap) {
+// Mouseover
+    currentClick.addEventListener('mousemove', function(e) {
+        document.querySelector('.tooltip').classList.add("active");
+        document.querySelector('.tooltip h2').innerText = regions[this.id].region_name;
+        document.querySelector('.tooltip p').innerText = regions[this.id].population;
+        var tootTip = document.querySelector('.tooltip');
+        x = e.offsetX;
+        y = e.offsetY;
+        tootTip.style.left = 150 + x+"px";
+        tootTip.style.top = 50 + y+"px";
+  })
+// mouseleave
+  currentClick.addEventListener('mouseleave', function(e) {
+    document.querySelector('.tooltip').classList.remove("active");
+  });
+}
+
 document.querySelector('.map-popupclose').addEventListener('click', function(){
     document.querySelector('.map-popup').classList.remove("active");
-})
-
+});
 
 for(i = 0; i < regions.length; i++) {
     console.log()
     document.getElementById(i).style.fill= regions[i].color
 }
-
-
-
-
-
-
-
-
-// $(function() {
-
-//     for(i = 0; i < regions.length; i++) {
-
-//         $('#'+ regions[i].region_code)
-//         .css({'fill': 'rgba(11, 104, 170,' + regions[i].population/highest_value +')'})
-//         .data('region', regions[i]);
-//     }
-
-//     $('.map g').mouseover(function (e) {
-//         var region_data=$(this).data('region');
-//         $('<div class="info_panel">'+
-//             region_data.region_name + '<br>' +
-//           	'Population: ' + region_data.population.toLocaleString("en-UK") +
-//           	'</div>'
-//          )
-//         .appendTo('body');
-//     })
-//     .mouseleave(function () {
-//         $('.info_panel').remove();
-//     })
-//     .mousemove(function(e) {
-//         var mouseX = e.pageX, //X coordinates of mouse
-//             mouseY = e.pageY; //Y coordinates of mouse
-
-//         $('.info_panel').css({
-//             top: mouseY-50,
-//             left: mouseX - ($('.info_panel').width()/2)
-//         });
-//     });
-
-// });
