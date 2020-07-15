@@ -18,8 +18,8 @@
   }
   
   .map path:hover {
-    fill: #fbbc05 !important;
-    stroke: #fbbc05 !important;
+    fill: #64dfdf !important;
+    stroke: #64dfdf !important;
     cursor: help;
   }
   

@@ -15,7 +15,7 @@ var regions=[
         "region_name": "West Bengal",
         "region_code": "2",
         "population": 5557276,
-        "color": "#CCCCCC"
+        "color": "#5390d9"
     },
     {
         "region_name": "Uttaranchal",
@@ -27,31 +27,31 @@ var regions=[
         "region_name": "Uttar Pradesh",
         "region_code": "4",
         "population": 4881756,
-        "color": "#FFFFFF"
+        "color": "#72efdd"
     },
     {
         "region_name": "Tripura",
         "region_code": "5",
         "population": 4377487,
-        "color": "#FFFFFF"
+        "color": "#56cfe1"
     },
     {
         "region_name": "Tamil Nadu",
         "region_code": "6",
         "population": 4374052,
-        "color": "#FFFFFF"
+        "color": "#72efdd"
     },
     {
         "region_name": "Sikkim",
         "region_code": "7",
         "population": 4050803,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Rajasthan",
         "region_code": "8",
         "population": 3692828,
-        "color": "#FFFFFF"
+        "color": "#56cfe1"
     },
     {
         "region_name": "Punjab",
@@ -69,7 +69,7 @@ var regions=[
         "region_name": "Orissa",
         "region_code": "11",
         "population": 1565127,
-        "color": "#FFFFFF"
+        "color": "#56cfe1"
     },
     {
         "region_name": "Nagaland",
@@ -81,7 +81,7 @@ var regions=[
         "region_name": "Mizoram",
         "region_code": "13",
         "population": 1312507,
-        "color": "#FFFFFF"
+        "color": "#56cfe1"
     },
     {
         "region_name": "Meghalaya",
@@ -93,7 +93,7 @@ var regions=[
         "region_name": "Manipur",
         "region_code": "15",
         "population": 1039934,
-        "color": "#FFFFFF"
+        "color": "#56cfe1"
     },
     {
         "region_name": "Maharashtra",
@@ -105,7 +105,7 @@ var regions=[
         "region_name": "Madhya Pradesh",
         "region_code": "17",
         "population": 576194,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Molise",
@@ -117,7 +117,7 @@ var regions=[
         "region_name": "Kerala",
         "region_code": "19",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Karnataka",
@@ -129,7 +129,7 @@ var regions=[
         "region_name": "Jharkhand",
         "region_code": "21",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Himachal Pradesh",
@@ -147,7 +147,7 @@ var regions=[
         "region_name": "Gujarat",
         "region_code": "24",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Goa",
@@ -159,13 +159,13 @@ var regions=[
         "region_name": "Delhi",
         "region_code": "26",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#5390d9"
     },
     {
         "region_name": "Daman and Diu",
         "region_code": "27",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#4ea8de"
     },
     {
         "region_name": "Val d'Aosta",
@@ -183,7 +183,7 @@ var regions=[
         "region_name": "Val d'Aosta",
         "region_code": "30",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#4ea8de"
     },
     {
         "region_name": "Bihar",
@@ -195,7 +195,7 @@ var regions=[
         "region_name": "Assam",
         "region_code": "32",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#4ea8de"
     },
     {
         "region_name": "Arunachal Pradesh",
@@ -207,13 +207,13 @@ var regions=[
         "region_name": "Andhra Pradesh",
         "region_code": "34",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#80ffdb"
     },
     {
         "region_name": "Andaman and Nicobar",
         "region_code": "35",
         "population": 127844,
-        "color": "#FFFFFF"
+        "color": "#64dfdf"
     }
 ];
 
