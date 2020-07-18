@@ -13,6 +13,9 @@
   position: relative;
   position: absolute;
   animation: zoomIn .5s ease-in-out;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
 
 .map.active {
@@ -51,6 +54,9 @@
   .districtmap {
     position: absolute;
     left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
   }
 
   .map path, .districtmap path  {
@@ -158,7 +164,7 @@
 
   .back-btn {
     cursor: pointer;
-    display: none;
+    display: inline-block !important;
   }
 
   .hide-breadcrumbs {
@@ -174,6 +180,7 @@
     top: 0px;
     width: 100%;
     transition: all .5s ease-out;
+    z-index: 99;
   }
   
   .title-bar.active {
@@ -193,7 +200,7 @@
   }
 
   .title-bar.active .back-btn,  .title-bar.active .hide-breadcrumbs{
-    display: inline-block;
+    display: inline-block !important;
   }
 
   @media(max-width: 767px){
