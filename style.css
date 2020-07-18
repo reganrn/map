@@ -172,34 +172,18 @@
   }
 
   .title-bar {
-    background: #f9f9f9;
-    padding: 10px;
-    display: flex;
-    align-items: center;
     position: fixed;
+    left:0px;
     top: 0px;
     width: 100%;
-    transition: all .5s ease-out;
     z-index: 99;
   }
+
+  .hide-items {
+    display: none !important;
+  }
   
-  .title-bar.active {
-    top: 0px;
-    transition: all .5s ease-in;
-  }
-
-  .breadcrumbs {
-    padding-left: 10px;
-  }
-
-  .breadcrumbs span{
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0px 6px;
-    color: #666666;  
-  }
-
-  .title-bar.active .back-btn,  .title-bar.active .hide-breadcrumbs{
+  .title-bar.active .hide-items {
     display: inline-block !important;
   }
 
