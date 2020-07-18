@@ -421,6 +421,7 @@ for (const currentClick of currentMap) {
     currentClick.addEventListener('click', function(event) {
         document.getElementById(regions[this.id].district).classList.add("active");     
         document.querySelector('.map').classList.add("active");
+        document.querySelector('.title-bar').classList.add("active");
         localStorage.setItem("currentID", this.id); 
   })
 }
@@ -475,6 +476,13 @@ districtClick.addEventListener('mouseleave', function(e) {
     document.querySelector('.tooltip').classList.remove("active");
   });
 }
+
+document.querySelector('.back-btn').addEventListener('click', function(){
+    localStorage.removeItem("currentID");
+    document.querySelector('.district-list').classList.remove("active");
+    document.querySelector('.map').classList.remove("active");
+    document.querySelector('.title-bar').classList.remove("active");
+})
 
 
 for(i = 0; i < regions.length; i++) {
