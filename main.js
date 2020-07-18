@@ -429,11 +429,11 @@ for (const currentClick of currentMap) {
 for (const currentClick of currentMap) {
 // Mouseover
     currentClick.addEventListener('mousemove', function(e) {
-        document.querySelector('.tooltip').classList.add("active");
-        document.querySelector('.tooltip h2').innerText = regions[this.id].region_name;
-        document.querySelector('.tooltip p').innerText = regions[this.id].population;
+        document.querySelector('.tooltips').classList.add("active");
+        document.querySelector('.tooltips h2').innerText = regions[this.id].region_name;
+        document.querySelector('.tooltips p').innerText = regions[this.id].population;
         var district = regions[this.id].district;
-        var tootTip = document.querySelector('.tooltip');
+        var tootTip = document.querySelector('.tooltips');
         x = e.clientX;
         y = e.clientY;
         tootTip.style.left = (x + 20) + 'px';
@@ -441,7 +441,7 @@ for (const currentClick of currentMap) {
   })
 // mouseleave
   currentClick.addEventListener('mouseleave', function(e) {
-    document.querySelector('.tooltip').classList.remove("active");
+    document.querySelector('.tooltips').classList.remove("active");
   });
 }
 
@@ -462,10 +462,10 @@ for (const districtClick of districtMap) {
         var getCurrentID = localStorage.getItem("currentID");
         var districkJson = regions[getCurrentID].districtlist;
         //console.log(districkJson[0].district_name)
-        document.querySelector('.tooltip').classList.add("active");
+        document.querySelector('.tooltips').classList.add("active");
         var districtID = this.id.replace(/[a-z]/g, '');
-        document.querySelector('.tooltip p').innerText = districkJson[districtID].district_name;
-        var tootTip = document.querySelector('.tooltip');
+        document.querySelector('.tooltips p').innerText = districkJson[districtID].district_name;
+        var tootTip = document.querySelector('.tooltips');
         x = e.clientX;
         y = e.clientY;
         tootTip.style.left = (x + 20) + 'px';
@@ -473,7 +473,7 @@ for (const districtClick of districtMap) {
   })
 // mouseleave
 districtClick.addEventListener('mouseleave', function(e) {
-    document.querySelector('.tooltip').classList.remove("active");
+    document.querySelector('.tooltips').classList.remove("active");
   });
 }
 
